@@ -1,0 +1,27 @@
+services:
+
+  postgres:
+    image: postgres:16.3
+    network_mode: host
+    environment:
+      POSTGRES_PASSWORD: example
+
+  falandou-webapp:
+    image: node:20-alpine
+    network_mode: host
+    volumes:
+      - type: bind
+        source: ./webapp
+        target: /home/falandou-app/webapp
+    working_dir: /home/falandou-app/webapp
+    command: npm start
+    
+  falandou-api:
+    image: node:20-alpine
+    network_mode: host
+    volumes:
+      - type: bind
+        source: ./api
+        target: /home/falandou-app/api
+    working_dir: /home/falandou-app/api
+    command: npm start
