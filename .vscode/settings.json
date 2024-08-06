@@ -6,6 +6,7 @@
         "students-dashboard",
         "students-dashboard",
         "public-pages",
-        "shared-components"
+        "shared-components",
+        "modules"
     ]
 }
