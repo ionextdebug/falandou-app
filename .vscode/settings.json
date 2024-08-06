@@ -1,0 +1,11 @@
+{
+    "conventionalCommits.scopes": [
+        "admin-dashboard",
+        "affiliates-dashboard",
+        "students-components",
+        "students-dashboard",
+        "students-dashboard",
+        "public-pages",
+        "shared-components"
+    ]
+}
